@@ -17,8 +17,6 @@ for result in glob.iglob('{}/*/*.cpp'.format(currentdir)):
 if len(files) == 0:
     print('Error! No files found!')
     exit()
-elif len(files) != 0:
-    print(files)
 
 for i in range(len(files)):
     r = requests.get(junk_url).text
